@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "173153505878",
+    "project_id": "voicey-bf9eb",
+    "storage_bucket": "voicey-bf9eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173153505878:android:10d5feae61012a6797a1f7",
+        "android_client_info": {
+          "package_name": "com.example.speech_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173153505878-35rhcgvpaob71fmk6f9007b7peaqql5u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYF9HSo_6Esx1gvtrm6MnI2tdREEcXG6s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173153505878-35rhcgvpaob71fmk6f9007b7peaqql5u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
