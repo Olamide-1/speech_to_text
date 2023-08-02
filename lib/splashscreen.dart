@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:speech_app/login.dart';
 import 'dart:async';
 
-import 'package:speech_app/welcome.dart';
-//import 'homepage.dart';
-
 class SplashScreen extends StatefulWidget {
   @override
   _SplashScreenState createState() => _SplashScreenState();

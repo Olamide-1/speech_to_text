@@ -1,8 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:speech_app/reusable_widgets/reusable_widget.dart';
-
-import 'homepage.dart';
 import 'login.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -71,7 +69,8 @@ class _RegisterPageState extends State<RegisterPage> {
                           password: _passwordTextController.text)
                       .then((value) => Navigator.pushReplacement(
                             context,
-                            MaterialPageRoute(builder: (context) => HomePage()),
+                            MaterialPageRoute(
+                                builder: (context) => LoginPage()),
                           ));
                 }),
                 signIpOption(),

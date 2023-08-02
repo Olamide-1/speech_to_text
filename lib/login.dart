@@ -1,9 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+//import 'package:speech_app/record.dart';
 import 'package:speech_app/register.dart';
 import 'package:speech_app/reusable_widgets/reusable_widget.dart';
-
-import 'homepage.dart';
+import 'package:speech_app/text.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -59,7 +59,7 @@ class _LoginPageState extends State<LoginPage> {
                           password: _passwordTextController.text)
                       .then((value) => Navigator.pushReplacement(
                             context,
-                            MaterialPageRoute(builder: (context) => HomePage()),
+                            MaterialPageRoute(builder: (context) => TextPage()),
                           ));
                 }),
                 signUpOption(),
