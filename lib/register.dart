@@ -1,4 +1,4 @@
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_auth/firebase_auth.dart'; //for user authentication
 import 'package:flutter/material.dart';
 import 'package:speech_app/reusable_widgets/reusable_widget.dart';
 import 'login.dart';
@@ -9,6 +9,7 @@ class RegisterPage extends StatefulWidget {
 }
 
 class _RegisterPageState extends State<RegisterPage> {
+  // Controllers for the password, email and username input fields
   TextEditingController _passwordTextController = TextEditingController();
   TextEditingController _emailTextController = TextEditingController();
   TextEditingController _userNameTextController = TextEditingController();

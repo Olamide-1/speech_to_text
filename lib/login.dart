@@ -1,6 +1,5 @@
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_auth/firebase_auth.dart'; //for user authentication
 import 'package:flutter/material.dart';
-//import 'package:speech_app/record.dart';
 import 'package:speech_app/register.dart';
 import 'package:speech_app/reusable_widgets/reusable_widget.dart';
 import 'package:speech_app/text.dart';
@@ -11,6 +10,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  // Controllers for the email and password input fields
   TextEditingController _passwordTextController = TextEditingController();
   TextEditingController _emailTextController = TextEditingController();
   @override
@@ -20,6 +20,7 @@ class _LoginPageState extends State<LoginPage> {
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
+          //background colour
           gradient: LinearGradient(
             colors: [
               Colors.purple.shade200,
@@ -38,20 +39,24 @@ class _LoginPageState extends State<LoginPage> {
                 20, MediaQuery.of(context).size.height * 0.2, 20, 0),
             child: Column(
               children: <Widget>[
+                //Logo
                 logoWidget("images/sound logo.png"),
                 SizedBox(
                   height: 30,
                 ),
+                // Text field for entering email
                 reusableTextField("Enter Username", Icons.email_outlined, false,
                     _emailTextController),
                 SizedBox(
                   height: 20,
                 ),
+                // Text field for entering password
                 reusableTextField("Enter Password", Icons.lock_outline, true,
                     _passwordTextController),
                 SizedBox(
                   height: 20,
                 ),
+                // Login button
                 Button(context, true, () {
                   FirebaseAuth.instance
                       .signInWithEmailAndPassword(
